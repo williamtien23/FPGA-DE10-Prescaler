@@ -1,4 +1,4 @@
-## Generated SDC file "Prescale_Method_Test.out.sdc"
+## Generated SDC file "Resource_Util_Analysis.out.sdc"
 
 ## Copyright (C) 2019  Intel Corporation. All rights reserved.
 ## Your use of Intel Corporation's design tools, logic functions 
@@ -20,7 +20,7 @@
 ## PROGRAM "Quartus Prime"
 ## VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
-## DATE    "Mon Jul 27 15:18:17 2020"
+## DATE    "Sun Oct 18 19:02:16 2020"
 
 ##
 ## DEVICE  "10M50DAF484C7G"
@@ -39,8 +39,7 @@ set_time_format -unit ns -decimal_places 3
 # Create Clock
 #**************************************************************
 
-create_clock -name {clock} -period 10.000 -waveform { 0.000 5.000 } [get_ports {in_clk}]
-
+create_clock -name {clock} -period 20.000 -waveform { 0.000 10.000 } [get_ports {i_clk}]
 
 #**************************************************************
 # Create Generated Clock
@@ -57,7 +56,8 @@ create_clock -name {clock} -period 10.000 -waveform { 0.000 5.000 } [get_ports {
 #**************************************************************
 # Set Clock Uncertainty
 #**************************************************************
-derive_clock_uncertainty
+
+
 
 
 #**************************************************************
